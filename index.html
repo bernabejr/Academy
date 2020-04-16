@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Santana Academy</title>
+    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () { //Esta funcion carga el script una vez la página este cargada
+            $('.galeria-port, .cards, .servicio-cont, .subtex').hide() //Oculta los textos
+
+            $('.titulo-galeria').on('click', function () { //despliega los textos
+                $('.galeria-port').slideToggle();
+            });
+            $('.titulo-card').on('click', function () {
+                $('.cards').slideToggle();
+            });
+            $('.titulo-ser').on('click', function () {
+                $('.servicio-cont').slideToggle();
+            });
+            $('.titulo').on('click', function () {
+                $('.subtex').slideToggle();
+            });
+        })
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $("#opener").on("click", function () {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Clases</a>
+            <a href="#">Acerda de</a>
+            <a href="#">Contacto</a>
+            <a href="formulario.html" id="opener">Inscribete</a>
+        </nav>
+        <div id="dialog">
+            <h1>Inscribete</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit animi at fuga architecto. Incidunt
+                odit error aliquam. Exercitationem ipsam odio animi eligendi aspernatur praesentium sunt, ex facilis
+                consequatur voluptates!</p>
+        </div>
+        <section class="textos-header">
+            <h1>Santana Academy</h1>
+            <h2>Aprende Riendo</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+
+        <section class="contenedor sobre-nosotros">
+
+            <h2 class="titulo">Nuestras Clases</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3 class="text">Primaria</h3>
+                    <p class="subtex"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius
+                        aspernatur
+                        ad
+                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto
+                        animi
+                        pariatur,
+                        velit doloribus laboriosam ut.</p>
+
+                    <h3 class="text">ESO</h3>
+                    <p class="subtex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius
+                        aspernatur
+                        ad
+                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto
+                        animi
+                        pariatur,
+                        velit doloribus laboriosam ut.</p>
+
+
+                    <h3 class="text">Bachillerato</h3>
+                    <p class="subtex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius
+                        aspernatur
+                        ad
+                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto
+                        animi
+                        pariatur,
+                        velit doloribus laboriosam ut.</p>
+
+
+                    <h3 class="text">Modulos</h3>
+                    <p class="subtex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius
+                        aspernatur
+                        ad
+                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto
+                        animi
+                        pariatur,
+                        velit doloribus laboriosam ut.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portafolio">
+            <div class="group">
+                <h2 class="titulo-galeria">Apuntate a Nuestras Asignaturas</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/img1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Matemáticas</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Física</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img3.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Química</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Inglés</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Lengua</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img5.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Francés</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img6.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Historia</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img7.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Biologia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor">
+            <h2 class="titulo-card">Que dicen nuestros alumnos</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/face1.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/face2.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo-ser">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <h3>Presenciales</h3>
+                        <img src="img/ilustracion1.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <h3>Atención 24h</h3>
+                        <img src="img/ilustracion4.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <h3>A distancia</h3>
+                        <img src="img/ilustracion3.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>8296312</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Bernajr21 | Bernabé Peña Serrano</h2>
+    </footer>
+</body>
+
+</html>
